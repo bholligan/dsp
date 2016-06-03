@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> vim. Stack Overflow had some good posts outlining the differences between vim and Emacs, and for now I don't think I'll need more than the text editing that vim provides. I also did some Vim Tutorials and found it straightforward to use and learn.
 
 --
 
