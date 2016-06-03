@@ -68,6 +68,12 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Spyder. Some cursory Google searching revealed a lot of postive opinions on Spyder, especially for use in data science.
+
+>> I really enjoy the object inspector and variable explorer. I've found it cumbersome in the past to constantly switch back-and-forth between online help docs, and the object inspector can eliminate a lot of that behavior. The plot, histogram and edit features in the variable explorer are also cool and seem useful. 
+
+>> My favorite shortcut is using tab to autocomplete variables, function names and more. When multiple names share the same starting letters when pressing tab, the dialog box that pops up is intuitive and easy to use. F9 is a handy shortcut to update only a section of code instead of running the whole thing. Cmd+F5 is the shortcut to run the debugger.
+
+>> The editor is customized in the Preferences interface that can be accessed with Cmd+, .
 
  
