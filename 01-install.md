@@ -46,13 +46,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python 3. Prior to applying to Metis I took online classes in Python. The classes used Python 3, and that's what I became comfortable with.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Run python from the command line. The first line that is printed (above where you can type) will show the version of python installed.
 
  
 
