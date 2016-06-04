@@ -60,5 +60,6 @@ What does `xargs` do? Give an example of how to use it.
 > > `find . -name '*.py' | xargs grep 'searchterm'`  
 > > This bit of code will look in every .py file in the current directory and show you where the uses of your search term occur.  
 
- 
+
+Adding this line through a text editor and uploading via terminal as practice.
 
