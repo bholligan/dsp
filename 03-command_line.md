@@ -13,7 +13,11 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **mkdir**: Make a directory  
+> > **ls**: Show the folders inside a directory.  
+> > **cd**: Change directory. Use '..' to move up a level.  
+> > **cp**: Copy a file. Can use 'cp -r filename directoryname' to copy a file to a new directory  
+> > **wildcard**: Use an asterix to stand in for all possible variables.
 
 ---
 
