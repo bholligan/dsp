@@ -17,22 +17,26 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > **ls**: Show the folders inside a directory.  
 > > **cd**: Change directory. Use '..' to move up a level.  
 > > **cp**: Copy a file. Can use 'cp -r filename directoryname' to copy a file to a new directory  
-> > **wildcard**: Use an asterix to stand in for all possible variables.
+> > **wildcard**: Use an asterix to stand in for all possible values.  
+> > **find**: Finds files that match certain criteria. For example, to print text files in current directory use 'find . -name ".txt" -print'  
+> > **grep**: Searches within files to find matches. Done with 'grep searchstring filename'. The filename can be a wildcard to search multiple files. Lot of customization here, like using -i to make the search not case-sensitive.  
+> > **man**: Pulls up the help documentation for a given command.  
+> > **more/less**: Quick and easy ways to display a file on screen. There are options to customize the display.  
+> > **vim**: Launches the vim text editor. Type 'vimtutor' to launch the built-in tutorial.  
+> > **tail**: Will display the last ten lines of a given file.
 
 ---
 
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
-
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls` Displays the files in the directory    
+`ls -a` Displays all files, including hidden ones.
+`ls -l`  Displays files in the long format, which shows permissions, ownership, size, mod date, and more.  
+`ls -lh`  Displays files in human readable format.  
+`ls -lah`  Displays all files in human readable format, including hidden files.  
+`ls -t`  Displays files in order based on date modified, with the most recent ones first.  
+`ls -Glp`  Displays files and highlights the directories with a "/" on the end of them.  
 
 ---
 
@@ -40,7 +44,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls -r`  Displays files in the reverse order.  
+`ls -1`  Displays each entry on a new line.  
+`ls -R`  Displays subdirectories as well.  
+`ls -o`  Displays files similar to 'ls -l', but it excludes the group name.  
+`ls -d`  Displays only directories.  
 
 ---
 
@@ -48,7 +56,9 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs lets you perform commands on the output of other commands. It reads the input as delimited by blanks or newlines. The default output command is echo. One cool use is to combine it with find and grep to filter files that contain a particular keyword. For example:  
+> > `find . -name '*.py' | xargs grep 'searchterm'`  
+> > This bit of code will look in every .py file in the current directory and show you where the uses of your search term occur.  
 
  
 
