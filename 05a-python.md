@@ -12,7 +12,8 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Tuples and lists both store a collection of items that can be assigned to a variable. The key difference between them is that tuples are immutable, meaning the values inside the tuple can not be changed. Tuples also have a fixed size in memory, which is beneficial for reducing space.  
+>> Tuples will work as keys in dictionaries. Dictionary values can be of any type, but dictionary keys must be immutable, and this includes tuples (as well as strings and numbers).
 
 ---
 
@@ -20,7 +21,22 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> A set is an ordered collection with no duplicate elements. This is a crucial behavior that allows it to behave like the mathematical definition of a set and enable operations like union and difference. Sets can't contain mutable objects, but they are mutable themselves. Lists are ordered collections, so you can index and slice them. Because sets are unordered, they behave more akin to dictionaries when referencing and removing values.  
+  
+```python
+#Lists and Sets examples  
+>>> name_set = {'Bob', 'James', 'Mary', 'Bob'}
+>>> print(name_set)  
+{'Bob', 'James', 'Mary'}   # All duplicate values are eliminated. Collection is unordered.  
+>>> 'Bob' in name_set     #This is case sensitive.   
+True  
+>>> name_list = ['Bob', 'James', 'Mary', 'Bob']
+>>> print(name_list)
+['Bob', 'James', 'Mary', 'Bob']  #All list items are retained.
+>>> print(name_list[3])
+'Bob'     #Lists are ordered, and thus can be indexed and referenced with indexing  
+```
+>> For performance, a set will be faster than a list when testing for membership. This is because sets are implemented with hash tables, so the existence of an item within a set can be determined very quickly using the item's hash. Python uses dynamically resized hashtables that improve lookup times.  
 
 ---
 
