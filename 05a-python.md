@@ -53,9 +53,8 @@ def f(x):
 # is the same as:  
 f = lambda x: x*2 
 ```
->> Lambda is often used with the map() function. The inputs to a map are a function  
+>> Lambda can be used with the map() function. The inputs to a map are a function  
 >> and a sequence, which allows an array of values to be processed by the lambda function.  
->> This greatly condenses the amount of lines required to execute some lines of code.  
 >> Map() returns an iterator that can be placed in a list with ease.  
 ```python
 >>> a = [1, 2, 3]
@@ -80,15 +79,43 @@ f = lambda x: x*2
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> List comprehensions allow lists to be created concisely and elegantly. The simplest list comprehension takes the form of [`expression-involving-loop-variable` for `loop-variable` in `sequence`].  The following will show list comprehension on different names.
+```python
+>>> names = ['Adam','Barry','Grace','George','Martha','Tom']
+#1. Output the length of each name in the names list 
+>>> [len(name) for name in names]
+[4, 5, 5, 6, 6, 3]
+#2. Output the first letter of each name if the name does not end in 'm'.
+>>> [name[0] for name in names if name[len(name)-1] != 'm']
+['B', 'G', 'G', 'M']
+```
+>> Examples 1 and 2 above can be done using the `map` and `filter` functions respectively. `map` is explained in Question 3. Filter works by accepting a function that returns True or False and applying it to a given sequence. Filter will return the members that evaluated to True in the function.  
+```python
+#1. Getting the length of each name with map().
+>>> list(map(len, names)) #len is the function being passed in, names is the iterable. 
+[4, 5, 5, 6, 6, 3]
+#2. This filter retrieves each name not ending in 'm'.
+>>> list(filter(lambda name: name[len(name)-1] != 'm', names))
+['Barry', 'Grace', 'George', 'Martha']
+```
+>> Set comprehension is similar to list comprehension. Of course the set will exclude duplicate values, meaning if we run our name length comprehension, the following will occur.
+```python
+>>> {len(name) for name in names}
+{3, 4, 5, 6}
+#Per our expectation, the 5 letter and 6 letter names are only recorded once in the set.
+```
+>> Dictionary comprehension can be used to create key value pairs out of the name and length of names that we have been using. In dictionary comprehension, a colon is used to separate the key and value expressions.
+```python
+>>> {name: len(name) for name in names}
+{'Adam': 4, 'Barry': 5, 'George': 6, 'Grace': 5, 'Martha': 6, 'Tom': 3}
+```
+  
 ---
 
 ###Complete the following problems by editing the files below:
 
 ###Q5. Datetime
 Use Python to compute days between start and stop date.   
-a.  
 
 ```
 date_start = '01-02-2013'    
