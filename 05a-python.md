@@ -52,20 +52,22 @@ def f(x):
   return x*2   
 # is the same as:  
 f = lambda x: x*2 
-#  
-# Lambda is often used with the map() function. The inputs to a map are a function  
-# and a sequence, which allows an array of values to be processed by the lambda function.  
-# This greatly condenses the amount of lines required to execute some lines of code.  
-# Map() returns an iterator that can be placed in a list with ease.  
+```
+>> Lambda is often used with the map() function. The inputs to a map are a function  
+>> and a sequence, which allows an array of values to be processed by the lambda function.  
+>> This greatly condenses the amount of lines required to execute some lines of code.  
+>> Map() returns an iterator that can be placed in a list with ease.  
+```python
 >>> a = [1, 2, 3]
 >>> b = [7, 8, 9]
 >>> list(map(lambda x,y:x+y, a,b)
 [8, 10, 12]  
-#  
-# The sorted() function accepts an iterable, a key function, and an optional reverse  
-# parameter to toggle between ascending and descending sorts. They key function applies  
-# to each element of the iterable before any comparisons are made. This can be combined  
-# in a useful way with lambda to use an object's indices as keys.  
+```  
+>> The sorted() function accepts an iterable, a key function, and an optional reverse  
+>> parameter to toggle between ascending and descending sorts. They key function applies  
+>> to each element of the iterable before any comparisons are made. This can be combined  
+>> in a useful way with lambda to use an object's indices as keys.  
+```python  
 >>> points = [('Kobe', 21), ('LeBron', 25), ('Wade', 18)]
 >>> sorted(points, key = lambda x: x[1])
 [('Wade', 18), ('Kobe', 21), ('LeBron', 25)]
