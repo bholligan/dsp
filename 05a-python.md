@@ -35,7 +35,7 @@ True
 ['Bob', 'James', 'Mary', 'Bob']  #All list items are retained.
 >>> print(name_list[3])
 'Bob'     #Lists are ordered, and thus can be indexed and referenced with indexing  
-```
+```  
 >> For performance, a set will be faster than a list when testing for membership. This is because sets are implemented with hash tables, so the existence of an item within a set can be determined very quickly using the item's hash. Python uses dynamically resized hashtables that improve lookup times.  
 
 ---
@@ -44,8 +44,34 @@ True
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> The `lambda` keyword is a convenient way to express one-line functions. Lambda functions can be used anyplace a function object is required. They are restricted to a single expression.  
+```python
+# Base example  
+# This function:  
+def f(x):  
+  return x*2   
+# is the same as:  
+f = lambda x: x*2 
+#  
+# Lambda is often used with the map() function. The inputs to a map are a function  
+# and a sequence, which allows an array of values to be processed by the lambda function.  
+# This greatly condenses the amount of lines required to execute some lines of code.  
+# Map() returns an iterator that can be placed in a list with ease.  
+>>> a = [1, 2, 3]
+>>> b = [7, 8, 9]
+>>> list(map(lambda x,y:x+y, a,b)
+[8, 10, 12]  
+#  
+# The sorted() function accepts an iterable, a key function, and an optional reverse  
+# parameter to toggle between ascending and descending sorts. They key function applies  
+# to each element of the iterable before any comparisons are made. This can be combined  
+# in a useful way with lambda to use an object's indices as keys.  
+>>> points = [('Kobe', 21), ('LeBron', 25), ('Wade', 18)]
+>>> sorted(points, key = lambda x: x[1])
+[('Wade', 18), ('Kobe', 21), ('LeBron', 25)]
+# In this example, players are sorted in ascending order by their points,  
+# which is in position 1 of the tuple.  
+```  
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
