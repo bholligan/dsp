@@ -70,14 +70,22 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Let's define P(twin) as the probability of being a twin and P(ident) as the probability of being an identical twin.  
+>> We are looking for P(ident|twin) - the probability that elvis was an identical twin given that he's a twin.  
+>> Definition of conditional probability states that P(ident|twin) = P(twin ∩ ident)/P(twin)  
+>> We know that P(twin ∩ ident) is 1/300 as all identical twins are, by definition, twins.  
+>> P(twin) is the summation of P(ident) and P(fraternal) as they are the only types of twins.  
+>> Put it all together and P(ident|twin) = (1/300)/(1/300+1/125) = 29.4%
+
+
 
 ---
 
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Bayesian statisticians use an understanding of the state of knowledge of an unknown parameter to create a "prior distribution". They collect random samples and use the sampling to create a "posterior distribution". The Bayesian will then use the posterior distribution to create a credibility interval to say that the parameter falls within the interval with a certain level of probability (typically 95%).  
+>> The frequentist statiscian makes no attempt to create a prior distribution. Frequentist statistics is an objective methodology where the goal is to have the true value of the parameter fall within a confidence interval a certain percentage of the time. It does not matter what the parameter's value actually is, as long as the method for generating the interval contains the unknown parameter the intended percent of the time. 
 
 ---
 
