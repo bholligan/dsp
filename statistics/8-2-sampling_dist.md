@@ -55,7 +55,7 @@ thinkplot.Plot(ns,error, label = 'RMSE')
 thinkplot.Show(xlabel = 'n', ylabel = 'Standard Error')
 ```
 
-![png](output_3_0.png)
+![png](8_2.png)
 
 ```python
 Estimate3(n=10)
