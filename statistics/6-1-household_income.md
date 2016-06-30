@@ -14,7 +14,7 @@ log_cdf = thinkstats2.Cdf(log_sample, label = 'Log CDF')
 thinkplot.Cdf(log_cdf)
 ```
 
-![png](output_4_1.png)
+![png](6_1.png)
 
 ```python
 median = log_cdf.Value(.5)
