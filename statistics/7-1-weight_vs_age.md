@@ -12,7 +12,7 @@ thinkplot.Scatter(age, weight)
 thinkplot.Show(xlabel = "Mother's Age", ylabel = "Baby's Weight", axis = [10, 45, 0, 16])
 ```
 
-![png](output_3_0.png)
+![png](7_scatter.png)
 
 ```python
 bins = np.arange(10,45,1)
@@ -27,7 +27,7 @@ for percent in [75,50,25]:
 thinkplot.Show(xlabel = "Mother's Age", ylabel = "Baby's Weight")
 ```
 
-![png](output_6_0.png)
+![png](7_percent.png)
 
 For doing correlation analysis I am excluding hte areas of the data set where there are very few samples.
 In this case less 16 and greater than 36.
